@@ -7,7 +7,16 @@
             <next>
               <block type="movement_forward" id="406">
                 <next>
-                  <block type="movement_stop" id="416"></block>
+                  <block type="robot_delay" id="427" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="434">
+                        <field name="NUM">9000</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_stop" id="416"></block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
